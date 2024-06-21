@@ -6,12 +6,6 @@ from transformers import (
     pipeline,
 )
 
-
-st.set_page_config(
-    page_title="Generador de SMS promocionales",
-    page_icon="📩",
-)
-
 model_card = 'fine-tuned-sms-generation-model'
 model = AutoModelForCausalLM.from_pretrained(model_card)
 tokenizer = AutoTokenizer.from_pretrained(model_card)
