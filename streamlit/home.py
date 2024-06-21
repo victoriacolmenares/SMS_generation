@@ -4,6 +4,11 @@ from kpis import main as kpis
 
 
 def main():
+    st.set_page_config(
+        page_title="Generador de SMS promocionales",
+        page_icon="📩",
+    )
+
     tabs = ["📲 Generar SMS", "📈 KPIs"]
     tab1_content, tab2_content = st.tabs(tabs)
 
